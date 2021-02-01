@@ -29,7 +29,7 @@ def create(a, b):
     return div(a, b)
 
 def prt(a):
-    print(a)
+    print(float(a))
 
 def inp():
     c = input()
