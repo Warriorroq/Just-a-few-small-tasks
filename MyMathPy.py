@@ -1,5 +1,4 @@
 error = 0
-lastDigit = 0
 
 def add(a, b):
     return a + b
@@ -39,7 +38,6 @@ def prt(a):
 
 def inp():
     print("input digit")
-    print("lastDigit: " + str(error))
     c = input()
     try:
         lastDigit = float(c)
