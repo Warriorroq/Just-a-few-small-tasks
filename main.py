@@ -1,3 +1,5 @@
+error = 0
+
 def add(a, b):
     return a + b
 
@@ -26,7 +28,10 @@ def nds(a, b):
         return nds(a, b % a)
 
 def create(a, b):
-    return div(a, b)
+    try:
+        return float(a / b)
+    except:
+        return error
 
 def prt(a):
     print(float(a))
@@ -37,3 +42,6 @@ def inp():
         return float(c)
     except ValueError:
         return inp()
+
+def clear_error():
+    error = 0
