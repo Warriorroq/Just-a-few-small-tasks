@@ -1,7 +1,5 @@
 error = 0
 
-digits = []
-
 def add(a, b):
     return a + b
 
