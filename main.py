@@ -16,8 +16,24 @@ def eq(a, b):
 def lt(a, b):
     return a < b
 
-#def nds(a, b):
- #   if(a != 0 or b != 0):
-  #      return
+def nds(a, b):
+    if(a == 0 or b == 0):
+        return a + b
 
-#print(nds(820,320))
+    if(a > b):
+        return nds(a % b, b)
+    else:
+        return nds(a, b % a)
+
+def create(a, b):
+    return div(a, b)
+
+def prt(a):
+    print(a)
+
+def inp():
+    c = input()
+    try:
+        return float(c)
+    except ValueError:
+        return inp()
