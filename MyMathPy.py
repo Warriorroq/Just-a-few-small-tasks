@@ -56,4 +56,5 @@ def inp():
 
 
 def clear_error():
-    error = 0
+    # error = 0
+    pass
